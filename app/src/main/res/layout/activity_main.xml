@@ -4,8 +4,52 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity"
     >
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onSwitch"
+        android:text="往右切换"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onLeftSwitch"
+        android:text="往左切换"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onMinus"
+        android:text="减少"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onAdd"
+        android:text="增加"
+        />
+
+    <com.imyyq.indicatorview.IndicatorView
+        android:id="@+id/indicatorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        app:indicatorCornerRadius="5dp"
+        app:indicatorItemCount="2"
+        app:indicatorItemHeight="10dp"
+        app:indicatorItemSpace="10dp"
+        app:indicatorItemType="typeRect"
+        app:indicatorItemWidth="20dp"
+        app:indicatorNormalColor="@android:color/black"
+        app:indicatorSelectedColor="@android:color/holo_blue_bright"
+        />
 
 </LinearLayout>

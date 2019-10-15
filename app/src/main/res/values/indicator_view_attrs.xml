@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="IndicatorView">
+        <!--颜色-->
+        <attr name="indicatorSelectedColor" format="color" />
+        <attr name="indicatorNormalColor" format="color" />
+
+        <!--每一项的高度和宽度-->
+        <attr name="indicatorItemHeight" format="dimension" />
+        <attr name="indicatorItemWidth" format="dimension" />
+        <!--每一项的间隔-->
+        <attr name="indicatorItemSpace" format="dimension" />
+        <!-- 数量 -->
+        <attr name="indicatorItemCount" format="integer" />
+        <!--类型-->
+        <attr name="indicatorItemType" format="enum">
+            <enum name="typeCircle" value="1" />
+            <enum name="typeRect" value="2" />
+        </attr>
+        <!--圆角矩形的半径-->
+        <attr name="indicatorCornerRadius" format="dimension" />
+    </declare-styleable>
+</resources>
